@@ -26,7 +26,7 @@ app = Flask(__name__)
 config_name = "development"
 app.config.from_object(config[config_name])
 
-CORS(app, headers=['Content-Type'])
+#CORS(app, headers=['Content-Type'])
 
 
 db.init_app(app)		
