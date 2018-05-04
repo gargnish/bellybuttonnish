@@ -68,7 +68,7 @@ function fx_dropdown(v_list_of_dict1,v_dom_id  , v_default_value) {
 
 
 function fx_populate_dropdown() {
-	url = 'https://bellybuttonnish.herokuapp.com/names'
+	url = '/names'
 	
   Plotly.d3.json(url, function(error, response) {
 
@@ -154,7 +154,7 @@ fx_restyle_need ();
 
 
 
-url = 'https://bellybuttonnish.herokuapp.com/metadata/'+v_sample_value
+url = '/metadata/'+v_sample_value
 	
 Plotly.d3.json(url, function(error, response) {var d1 = response;
 console.log(d1)
@@ -193,7 +193,7 @@ v_plot1_list_of_dict  = k.map (i => {return ( {'Sample MetaData' : i +': ' + d1[
 
  //------------------bubble-------------------
   
-  url = 'https://bellybuttonnish.herokuapp.com/samples/'+v_sample_value
+  url = '/samples/'+v_sample_value
 	
 Plotly.d3.json(url, function(error, response) {
 	
@@ -208,7 +208,7 @@ v_plot1_list_of_dict  = response
     
  //------------------pie-------------------
   
-  url = 'https://bellybuttonnish.herokuapp.com/samples/'+v_sample_value
+  url = '/samples/'+v_sample_value
 
 
 
@@ -226,7 +226,7 @@ v_plot1_list_of_dict  = response
 		
 	
   //------------------------gauge------------- 
-  url = 'https://bellybuttonnish.herokuapp.com/wfreq/'+v_sample_value
+  url = '/wfreq/'+v_sample_value
 	
 Plotly.d3.json(url, function(error, response) {
 	
