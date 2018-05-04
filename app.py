@@ -15,7 +15,7 @@ from config import config
 #sys.path.insert(0, './db')
 from db.models import db, sess, c_otu, c_samples_metadata, c_samples
 
-from flask.ext.cors import CORS
+#from flask.ext.cors import CORS
 #################################################
 # Flask Setup
 #################################################
